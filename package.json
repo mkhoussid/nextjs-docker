@@ -8,6 +8,7 @@
 		"docker:install": "rm -rf node_modules && rm -rf yarn.lock yarn && yarn"
 	},
 	"dependencies": {
+		"axios": "^0.20.0",
 		"express": "^4.17.1",
 		"next": "9.5.5",
 		"react": "16.9.0",

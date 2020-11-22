@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function Index() {
-	return <React.Fragment>Home</React.Fragment>;
+export default function Home() {
+	return <div>index</div>;
 }

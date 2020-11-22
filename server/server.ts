@@ -1,17 +1,10 @@
-// TODO, add next-secure-headers or another solution
 import next from 'next';
-import bodyParser from 'body-parser';
-import express, { Application } from 'express';
+import express from 'express';
 
 const PORT = process.env.PORT || 3000;
 
 const nextApp = next({ dev: process.env.NODE_ENV !== 'production' });
 const handle = nextApp.getRequestHandler();
-
-const applyMiddleware = (app: Application) => {
-	app.use(bodyParser.json());
-	app.use(bodyParser.urlencoded({ extended: true }));
-};
 
 const startServer = async () => {
 	await nextApp.prepare();
