@@ -28,4 +28,4 @@ EXPOSE 3000
 # USER node
 
 # Run npm start script when container starts
-CMD [ "pm2-runtime", "start", "./.next/production-server/server.js" ]
+CMD [ "pm2-runtime", "start", ".next/production-server/server.js" ]
