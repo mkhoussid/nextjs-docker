@@ -5,15 +5,14 @@
 	"scripts": {
 		"dev": "nodemon server/server.ts",
 		"build": "next build && tsc --project tsconfig.server.json",
-		"docker:build": "rm -rf node_modules && rm -rf yarn.lock yarn && yarn"
+		"docker:install": "rm -rf node_modules && rm -rf yarn.lock yarn && yarn"
 	},
 	"dependencies": {
 		"express": "^4.17.1",
 		"next": "9.5.5",
 		"react": "16.9.0",
 		"react-dom": "16.9.0",
-		"ts-node": "^9.0.0",
-		"dev": "nodemon server/server.ts"
+		"ts-node": "^9.0.0"
 	},
 	"devDependencies": {
 		"@types/express": "^4.16.0",
